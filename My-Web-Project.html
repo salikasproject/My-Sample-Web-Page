@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Enhanced Webpage with Color and GIFs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #333;
+        }
+        header {
+            background-color: #00796b;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .main-content {
+            padding: 2rem;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .main-content h2 {
+            color: #00796b;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea, form button {
+            margin-bottom: 1rem;
+            padding: 0.8rem;
+            border: 1px solid #00796b;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: #00796b;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #004d40;
+        }
+        footer {
+            background-color: #00796b;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .gif-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Enhanced Webpage</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="home" class="main-content">
+            <h2>Home</h2>
+            <p>Welcome to our website. This is the home section where we introduce the purpose of our website and give an overview of what to expect.</p>
+            <p>Here you can find various sections about us, a gallery of images, and a contact form to get in touch with us.</p>
+            <div class="gif-container">
+                <img src="https://media.giphy.com/media/3o7aD2P1e2DR4u7W9a/giphy.gif" alt="Exciting GIF">
+            </div>
+        </section>
+        <section id="about" class="main-content">
+            <h2>About Us</h2>
+            <p>We are a team of enthusiasts dedicated to providing you with quality content and services. Our mission is to offer valuable insights and engaging experiences through our platform.</p>
+            <p>Our team consists of experts in various fields, and we are passionate about what we do. Learn more about us and our journey by exploring this section.</p>
+            <div class="gif-container">
+                <img src="https://media.giphy.com/media/3o6MbmX1o4PfWqebAc/giphy.gif" alt="Teamwork GIF">
+            </div>
+        </section>
+        <section id="gallery" class="main-content">
+            <h2>Gallery</h2>
+            <p>Explore our gallery to see some of the highlights and moments captured by our team. Here are a few images that showcase our work:</p>
+        </section>
+        <section id="contact" class="main-content">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, please feel free to reach out using the form below:</p>
+            <form action="mailto:example@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Enhanced Webpage. All rights reserved.</p>
+    </footer>
+</body>
+</html>
